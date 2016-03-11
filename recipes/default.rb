@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-
+region = node[:ntp][:region]
 
 package "ntp" do
 	action :upgrade
@@ -19,7 +19,7 @@ template "/etc/ntp.conf" do
 	group "root"
 	mode "0644"
 	variables ({
-		:servers => node[:ntp][:servers]
+		:servers => node[:ntp][region][:servers]
 	})
 end
 
