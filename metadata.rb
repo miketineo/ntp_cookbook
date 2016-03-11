@@ -1,6 +1,6 @@
 name             'lab_ntp_cookbook'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Team2'
+maintainer_email 'team2@zendesk.com'
 license          'All rights reserved'
 description      'Installs/Configures lab_ntp_cookbook'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
